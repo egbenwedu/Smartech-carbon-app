@@ -1,2 +1,4 @@
 streamlit-authenticator==0.3.3
 scikit-learn
+streamlit-authenticator==0.1.5
+scikit-learn
