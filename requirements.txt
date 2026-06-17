@@ -1,2 +1,9 @@
 streamlit-authenticator==0.1.5
 scikit-learn
+# Initialize the authenticator by passing the configuration dictionary directly
+authenticator = stauth.Authenticate(
+    credentials,
+    "carbon_capture_cookie",
+    "some_signature_key_12",
+    30
+)
