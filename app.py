@@ -20,9 +20,10 @@ credentials = {
 
 authenticator = stauth.Authenticate(
     credentials=credentials,
-    cookie_name='some_cookie_name',
-    cookie_key='some_signature_key',
+    cookie_name="carbon_capture_cookie",
+    cookie_key="some_signature_key_123",
     cookie_expiry_days=30
+)
 
 # =====================================================================
 # 2. AI CARBON CAPTURE ML MODEL DATA
