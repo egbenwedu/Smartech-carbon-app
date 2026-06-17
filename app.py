@@ -19,21 +19,12 @@ credentials = {
 }
 
 # Create a config dictionary for the new authenticator version
-config_data = {
-    "credentials": credentials,
-    "cookie": {
-        "name": "carbon_capture_cookie",
-        "key": "some_signature_key_12",
-        "expiry_days": 30
-    }
-}
-
-# Initialize the authenticator using the config layout
+# Initialize the authenticator by passing the configuration dictionary directly
 authenticator = stauth.Authenticate(
-    config_data['credentials'],
-    config_data['cookie']['name'],
-    config_data['cookie']['key'],
-    config_data['cookie']['expiry_days']
+    credentials,
+    "carbon_capture_cookie",
+    "some_signature_key_12",
+    30
 )
 
 # =====================================================================
